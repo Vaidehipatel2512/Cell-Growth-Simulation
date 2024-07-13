@@ -1,0 +1,13 @@
+/* src/components/Cell.css */
+.cell {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+  }
+  
+  .cell.occupied {
+    background-color: #7900bb;
+  }
+  
