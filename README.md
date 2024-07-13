@@ -1,46 +1,31 @@
-# Getting Started with Create React App
+# Cell Growth Simulation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+The Cell Growth Simulation is an interactive web application that simulates the growth patterns of bacterial colonies in a petri dish. Built using React and TypeScript, the app visually demonstrates how bacterial cells divide and spread according to specific biological rules.
 
-## Available Scripts
+## Features
+- A 20x20 grid representing the petri dish where cells can be occupied or empty.
+- Bacterial cells divide every fixed time interval, provided there is an adjacent empty cell.
+- User controls to start/pause the simulation and reset the grid.
+- Input field to set the cell division interval.
+- Ability to manually place or remove cells by clicking on the grid.
 
-In the project directory, you can run:
+## Technologies Used
+- React (with TypeScript)
+- CSS for styling
+- No external libraries
 
-### `npm start`
+## Assumptions
+- The simulation starts with no cells. Users must place at least one cell to begin.
+- The grid size is fixed at 20x20 for this version.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Performance Analysis
+- The application efficiently manages state updates using React's state management.
+- The simulation uses a timer to control the cell division interval, ensuring that performance remains smooth even with multiple iterations.
+- Error handling is in place to alert users if they try to start the simulation without any cells.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Live Demo ##
+https://vaidehipatel2512.github.io/cell-growth-simulation/
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Source Code Repository ##
+https://github.com/Vaidehipatel2512/cell-growth-simulation.git
